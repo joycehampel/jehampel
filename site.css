@@ -1,0 +1,17 @@
+html {
+  background: url(bgd.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.comingsoon {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Zilla Slab', serif;
+
+}
