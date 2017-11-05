@@ -1,14 +1,177 @@
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <title>JE Hampel Gallery</title>
     <link rel="stylesheet" type="text/css" href="site.css">
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <script src="lightbox.js">
+      </script>
   </head>
+
   <body>
     <a href="index.html"><img class="logo" src="logo2.png" alt="JE Hampel logo" /></a>
     <div class="Heading">
-      GALLERY
+      PROJECTS
     </div>
+    <div class="row">
+     <div class="column">
+       <p>COFFEE TABLE</p>
+       <img src="coffeetable.jpg" onclick="openCoffeeModal();currentSlide(1)" class="hover-shadow" style="width:150px">
+     </div>
+     <div class="column">
+       <p>SIDE TABLE</p>
+       <img src="sidetable.jpg" onclick="openSideModal();currentSlide(8)" class="hover-shadow" style="width:150px">
+     </div>
+     <div class="column">
+      <p> IOWA TABLE</p>
+       <img src="iowatable.jpg" onclick="openIowaModal();currentSlide(1)" class="hover-shadow" style="width:150px">
+     </div>
+     <div class="column">
+       <p>KUBB SET</p>
+       <img src="kubb.jpg" onclick="openKubbModal();currentSlide(1)" class="hover-shadow" style="width:150px">
+     </div>
+   </div>
+
+   <div id="CoffeeModal" class="modal">
+     <span class="close cursor" onclick="closeCoffeeModal()">&times;</span>
+     <div class="modal-content">
+
+       <div class="mySlides">
+         <div class="numbertext">1 / 7</div>
+         <img src="coffee1.jpg" style="width:100%; transform: rotate(180deg)">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">2 / 7</div>
+         <img src="coffee2.jpg" style="width:100%">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">3 / 7</div>
+         <img src="coffee3.jpg" style="width:100%">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">4 / 7</div>
+         <img src="coffee4.jpg" style="width:100%">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">5 / 7</div>
+         <img src="coffee5.jpg" style="width:100%">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">6 / 7</div>
+         <img src="coffee6.jpg" style="width:100%">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">7 / 7</div>
+         <img src="coffee7.jpg" style="width:100%">
+       </div>
+
+       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+       <div class="caption-container">
+         <p id="caption"></p>
+       </div>
+
+       <div class="column">
+         <img class="images" src="coffee1.jpg" onclick="currentSlide(1)" alt="Safety First" style="width:150px; transform: rotate(180deg)">
+       </div>
+
+       <div class="column">
+         <img class="images" src="coffee2.jpg" onclick="currentSlide(2)" alt="Plans" style="width:150px">
+       </div>
+
+       <div class="column">
+         <img class="images" src="coffee3.jpg" onclick="currentSlide(3)" alt="Welding the Frame" style="width:150px">
+       </div>
+
+       <div class="column">
+         <img class="images" src="coffee4.jpg" onclick="currentSlide(4)" alt="Table Top to Be" style="width:150px">
+       </div>
+
+       <div class="column">
+         <img class="images" src="coffee5.jpg" onclick="currentSlide(5)" alt="Welded Frame" style="width:150px">
+       </div>
+
+       <div class="column">
+         <img class="images" src="coffee6.jpg" onclick="currentSlide(6)" alt="Completed Table" style="width:150px">
+       </div>
+
+       <div class="column">
+         <img class="images" src="coffee7.jpg" onclick="currentSlide(7)" alt="Table in Context" style="width:150px">
+       </div>
+
+       </div>
+     </div>
+   </div>
+
+   <div id="SideModal" class="modal">
+     <span class="close cursor" onclick="closeSideModal()">&times;</span>
+     <div class="modal-content">
+
+       <div class="mySlides">
+         <div class="numbertext">1 / 5</div>
+         <img src="side1.jpg" style="width:100%; transform: rotate(90deg)">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">2 / 5</div>
+         <img src="side2.jpg" style="width:100%; transform: rotate(90deg)">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">3 / 5</div>
+         <img src="side3.jpg" style="width:100%; transform: rotate(90deg)">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">4 / 5</div>
+         <img src="side4.jpg" style="width:100%; transform: rotate(90deg)">
+       </div>
+
+       <div class="mySlides">
+         <div class="numbertext">5 / 5</div>
+         <img src="side5.jpg" style="width:100%">
+       </div>
+
+       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+       <div class="caption-container">
+         <p id="caption"></p>
+       </div>
+
+       <div class="column">
+         <img class="images" src="side1.jpg" onclick="currentSlide(8)" alt="Framing" style="width:150px; transform: rotate(90deg)">
+       </div>
+
+       <div class="column">
+         <img class="images" src="side2.jpg" onclick="currentSlide(9)" alt="Pre-fabricated Box" style="width:150px; transform: rotate(90deg)">
+       </div>
+
+       <div class="column">
+         <img class="images" src="side3.jpg" onclick="currentSlide(10)" alt="Adding Feet" style="width:150px; transform: rotate(90deg)">
+       </div>
+
+       <div class="column">
+         <img class="images" src="side4.jpg" onclick="currentSlide(11)" alt="Refining Feet" style="width:150px; transform: rotate(90deg)">
+       </div>
+
+       <div class="column">
+         <img class="images" src="side5.jpg" onclick="currentSlide(12)" alt="Completed" style="width:150px">
+       </div>
+
+
+       </div>
+     </div>
+   </div>
+
+
   </body>
   <footer class="footer">
     <a class="footer-text">JE Hampel &copy 2017</a>

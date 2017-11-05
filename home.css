@@ -39,6 +39,24 @@ IMG.logo {
   text-decoration: overline;
 }
 
+.AboutText {
+  Color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.25em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: .8em;
+  text-align: center;
+  font-family:  'Zilla Slab', serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  width: 50%;
+  background-color: white;
+  opacity: 0.5;
+}
+
 .footer {
   color: white;
   margin-left: auto;
